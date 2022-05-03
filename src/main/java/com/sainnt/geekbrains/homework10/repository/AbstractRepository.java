@@ -9,6 +9,8 @@ import java.util.Map;
 import java.util.concurrent.atomic.AtomicLong;
 
 public abstract class AbstractRepository<T extends Entity> {
+
+    //Implemented repo according to task
     private final AtomicLong idCounter = new AtomicLong(1);
 
     protected Map<Long, T> entities;
